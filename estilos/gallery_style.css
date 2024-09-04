@@ -732,25 +732,25 @@ input:checked + .slider {
   }
 
   #title{
-      font-size: 20;
-      font-family: "neco_bold";
-      font-weight: 550;
-      color:rgb(181, 124, 75);
-      margin-bottom: 0;
-  }
-  
-  #subtitle{display:none;}
+    font-size: 20;
+    font-family: "permanentmarker_regular";
+    font-weight: 550;
+    color:#C5705D;
+    margin-bottom: 0;
+}
 
-  #subtitle_mobile{
-      display:block;
-      font-size: 14;
-      font-family: "Supreme_Regular";
-      color: #4b1f00;
-      margin-top: 4px;
-      margin-left: 0px;
-      position:relative;
-      top:-4;
-  }
+#subtitle{display:none;}
+
+#subtitle_mobile{
+    display:block;
+    font-size: 14;
+    font-family: "Supreme_Regular";
+    color: #815451;
+    margin-top: 4px;
+    margin-left: 0px;
+    position:relative;
+    top:-4;
+}
 
   .sidebar{
       top:110;
