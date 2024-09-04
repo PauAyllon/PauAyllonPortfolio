@@ -29,9 +29,9 @@
     </div>
 
     <div class="buttons_div_mobile">
-        <a href="proyectos.html" class="transition-link"><span id="bot1">PROYECTOS</span></a>
-        <a href="galeria.html" class="transition-link"><span id="bot2">GALERIA</span></a>
-        <a href="aboutme.html" class="transition-link"><span id="bot3">SOBRE MI</span></a>
+        <a href="proyectos.html" class="transition-link"><span id="bot4">PROYECTOS</span></a>
+        <a href="galeria.html" class="transition-link"><span id="bot5">GALERIA</span></a>
+        <a href="aboutme.html" class="transition-link"><span id="bot6">SOBRE MI</span></a>
     </div>
 
     <div id="middle_bg">
@@ -59,11 +59,17 @@
                 bot1:"PROYECTOS",
                 bot2:"GALERIA",
                 bot3:"SOBRE MI",
+                bot4:"PROYECTOS",
+                bot5:"GALERIA",
+                bot6:"SOBRE MI",
             },
             en: {
                 bot1:"PROJECTS",
                 bot2:"GALLERY",
                 bot3:"ABOUT ME",
+                bot4:"PROJECTS",
+                bot5:"GALLERY",
+                bot6:"ABOUT ME",
             }
         };
 
@@ -73,6 +79,9 @@
         const bot1 = document.getElementById('bot1');
         const bot2 = document.getElementById('bot2');
         const bot3 = document.getElementById('bot3');
+        const bot4 = document.getElementById('bot4');
+        const bot5 = document.getElementById('bot5');
+        const bot6 = document.getElementById('bot6');
 
         // Función para cambiar el idioma
         function switchLanguage(language) {
@@ -82,6 +91,9 @@
                 bot1.textContent = translations.en.bot1;
                 bot2.textContent = translations.en.bot2;
                 bot3.textContent = translations.en.bot3;
+                bot4.textContent = translations.en.bot4;
+                bot5.textContent = translations.en.bot5;
+                bot6.textContent = translations.en.bot6;
 
                 document.documentElement.lang = 'en';
                 toggle.checked = true;
@@ -91,6 +103,9 @@
                 bot1.textContent = translations.es.bot1;
                 bot2.textContent = translations.es.bot2;
                 bot3.textContent = translations.es.bot3;
+                bot4.textContent = translations.es.bot4;
+                bot5.textContent = translations.es.bot5;
+                bot6.textContent = translations.es.bot6;
 
                 document.documentElement.lang = 'es';
                 toggle.checked = false;
