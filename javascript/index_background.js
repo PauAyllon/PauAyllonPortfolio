@@ -11,16 +11,18 @@ window.onload = function () {
         './multimedia/index/4.jpg',
         './multimedia/index/1.jpg',
     ]  
-    /** 
-    var background_index=[
-        './multimedia/index/7_blur.png',
-        './multimedia/index/6.png',
-        './multimedia/index/2_blur.png',
-        './multimedia/index/3_blur.png',
-        './multimedia/index/4_blur.png',
-        './multimedia/index/1_blur.png'
-    ] 
-*/
+
+    background_index.forEach(url => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = url.split('/').pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+
+
+
     setInterval(changeBackground, 7000);
 
     function changeBackground() {
