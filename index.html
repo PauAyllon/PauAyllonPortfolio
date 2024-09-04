@@ -1,0 +1,105 @@
+<head>
+    <title>Pau Ayllón - Portfolio</title>
+
+    <link rel="icon" href="multimedia/webicon.png">
+    <link rel="stylesheet" href="estilos/index_style.css">
+
+    <script src="javascript/filter_projects.js" defer></script>
+    <script src="javascript/index_background.js" defer></script>
+    <script src="javascript/fade_out.js" defer></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="background" id="body"></div>
+    <div class="language-container">
+        <label class="toggle-button">
+            <input type="checkbox" id="language-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="buttons_div">
+        <a href="proyectos.html" id="buttons_style" class="transition-link"><span id="bot1">PROYECTOS</span></a>
+        <a href="galeria.html" id="buttons_style" class="transition-link" style="padding-left: 30px;padding-right: 30px;"><span id="bot2">GALERIA</span></a>
+        <a href="aboutme.html" id="buttons_style" class="transition-link" style="padding-left: 30px;padding-right: 30px;"><span id="bot3">SOBRE MI</span></a>
+    </div>
+
+    <div id="middle_bg">
+        <p id="title">PAU AYLLÓN</p>
+    </div>
+
+    <div id="bottom_bg">
+        <div class="bottom_info">
+            <div class="RS_div">
+                <a href="https://www.instagram.com/cr1m_m/" id="RS_button"> <img src="multimedia/iconos/RedesSociales/png_instagram.png" id="RS_icon"> </a>
+                <a href="https://x.com/CrimmFA" id="RS_button"> <img src="multimedia/iconos/RedesSociales/png_twitter.png" id="RS_icon"> </a>
+                <a href="https://www.linkedin.com/in/pau-ayll%C3%B3n-ortol%C3%A1-021490304/" id="RS_button"> <img src="multimedia/iconos/RedesSociales/png_linkedin.png" id="RS_icon"> </a>
+                <a href="mailto:pauayllonortola@gmail.com" id="RS_button"> <img src="multimedia/iconos/RedesSociales/png_email.png" id="RS_icon"> </a>
+            </div>
+            <p id="mailto">pauayllonortola@gmail.com</p>
+            <p id="copyright">© Copyright 2024 Pau Ayllón Ortolá - All rights reserved<br>Website programmed by <a href="https://www.linkedin.com/in/pau-ayll%C3%B3n-ortol%C3%A1-021490304/" style="text-decoration: none;">Pau Ayllón Ortolá</a></p>
+        </div>
+    </div>
+
+
+    <script>
+        // Datos de traducción
+        const translations = {
+            es: {
+                bot1:"PROYECTOS",
+                bot2:"GALERIA",
+                bot3:"SOBRE MI",
+            },
+            en: {
+                bot1:"PROJECTS",
+                bot2:"GALLERY",
+                bot3:"ABOUT ME",
+            }
+        };
+
+        // Elementos del DOM
+        const toggle = document.getElementById('language-toggle');
+
+        const bot1 = document.getElementById('bot1');
+        const bot2 = document.getElementById('bot2');
+        const bot3 = document.getElementById('bot3');
+
+        // Función para cambiar el idioma
+        function switchLanguage(language) {
+            const selectedLanguage = language || (toggle.checked ? 'en' : 'es');
+
+            if (selectedLanguage === 'en') {
+                bot1.textContent = translations.en.bot1;
+                bot2.textContent = translations.en.bot2;
+                bot3.textContent = translations.en.bot3;
+
+                document.documentElement.lang = 'en';
+                toggle.checked = true;
+            } 
+            
+            else {
+                bot1.textContent = translations.es.bot1;
+                bot2.textContent = translations.es.bot2;
+                bot3.textContent = translations.es.bot3;
+
+                document.documentElement.lang = 'es';
+                toggle.checked = false;
+            }
+            localStorage.setItem('preferredLanguage', selectedLanguage);
+        }
+
+        // Event Listener
+        toggle.addEventListener('change', () => switchLanguage());
+
+        // Establecer idioma por defecto
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            switchLanguage(savedLanguage);
+        });
+    </script>
+
+</body>
