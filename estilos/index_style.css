@@ -58,7 +58,7 @@ p{ margin:0; }
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../multimedia/index/7.png');
+  background-image: url('../multimedia/index/5.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -254,6 +254,10 @@ input:checked + .slider {
     font-size: 20vw;
     font-family: "permanentmarker_regular";
     transition-duration: .4s;
+  }
+
+  #middle_bg{
+    margin-bottom: 3vh;
   }
 
   .buttons_div{
