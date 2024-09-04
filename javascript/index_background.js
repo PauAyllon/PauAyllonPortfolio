@@ -5,23 +5,7 @@ window.onload = function () {
     /** */
     var background_index=[
         './multimedia/index/5.jpg',
-        './multimedia/index/6.jpg',
-        './multimedia/index/3.jpg',
-        './multimedia/index/2.jpg',
-        './multimedia/index/4.jpg',
-        './multimedia/index/1.jpg',
     ]  
-
-    background_index.forEach(url => {
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = url.split('/').pop();
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-
-
 
     setInterval(changeBackground, 7000);
 
