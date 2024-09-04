@@ -586,9 +586,9 @@ input:checked + .slider {
 
     #title{
         font-size: 20;
-        font-family: "neco_bold";
+        font-family: "permanentmarker_regular";
         font-weight: 550;
-        color:rgb(181, 124, 75);
+        color:#C5705D;
         margin-bottom: 0;
     }
     
@@ -598,7 +598,7 @@ input:checked + .slider {
         display:block;
         font-size: 14;
         font-family: "Supreme_Regular";
-        color: #4b1f00;
+        color: #815451;
         margin-top: 4px;
         margin-left: 0px;
         position:relative;
@@ -616,6 +616,34 @@ input:checked + .slider {
         align-items: center;
         gap: 10px;
         padding-top: 1.6vh;
+    }
+
+    #overlay_txt{
+        color: white;
+        font-size: 25px;
+        font-family: "PlusJakartaSans_regular";
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .overlay_txt{
+        color: white;
+        font-size: 25px;
+        font-family: "PlusJakartaSans_regular";
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 
 }
