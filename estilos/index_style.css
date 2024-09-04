@@ -42,7 +42,7 @@ body{
   background-color: #F7DED0;
   /* background-image: url('../multimedia/index/7.png'); */
   opacity: 0;
-  transition: opacity 1s ease-in-out; 
+  transition: opacity 2s ease-in-out; 
 }
 
 body.loaded {
