@@ -249,7 +249,7 @@ input:checked + .slider {
 @media screen and (max-width: 767px) {
 
   #title{
-    margin-top: 10vh;
+    margin-top: 1vh;
     color:#F7DED0;
     font-size: 20vw;
     font-family: "permanentmarker_regular";
