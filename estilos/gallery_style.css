@@ -763,4 +763,5 @@ input:checked + .slider {
       padding-top: 1.6vh;
   }
 
+  #overlay_txt{ display:none; }
 }

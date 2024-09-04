@@ -618,32 +618,8 @@ input:checked + .slider {
         padding-top: 1.6vh;
     }
 
-    #overlay_txt{
-        color: white;
-        font-size: 25px;
-        font-family: "PlusJakartaSans_regular";
-        font-weight: 500;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+    #overlay_txt{ display:none; }
     
-    .overlay_txt{
-        color: white;
-        font-size: 25px;
-        font-family: "PlusJakartaSans_regular";
-        font-weight: 500;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
+    .overlay_txt{ display:none; }
 
 }
