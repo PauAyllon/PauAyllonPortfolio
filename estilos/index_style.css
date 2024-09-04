@@ -127,8 +127,8 @@ p{ margin:0; }
 
 #RS_icon{
     width: 40px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     text-decoration: none;
     transition-duration: .5s;
 }
@@ -244,6 +244,8 @@ input:checked + .slider {
 
 /*---------------------------------------------------------*/
 /* Versión para movil */
+.buttons_div_mobile{display:none;}
+
 @media screen and (max-width: 767px) {
 
   #title{
@@ -282,5 +284,41 @@ input:checked + .slider {
   }
 
   #bot2{margin-top: 40vh;}
+
+  .buttons_div{display:none;}
+  .buttons_div_mobile{display:block; text-align: center;}
+
+  .buttons_div_mobile a{
+    text-decoration: none;
+    color:#F7DED0;
+
+    font-size: 15px;
+    font-family: "PlusJakartaSans_medium";
+
+    border:solid;
+    border-color: #F7DED0;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-width: 4px;
+
+    margin-top: 30px;
+
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 0px;
+    padding-bottom: 4px;
+
+    width: 50%;
+    margin-left: 23vw;
+    display: block;
+
+    transition-duration: .4s;
+  }
+
+  .buttons_div_mobile a:hover{
+    background-color: #F7DED0;
+    border-radius: 24px;
+    color: #272727;
+  }
 
 }
